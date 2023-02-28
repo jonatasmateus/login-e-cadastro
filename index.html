@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulário de Login e Cadastro com HTML5 e CSS3</title>
+</head>
+
+<body>
+    <div class="container"> <!-- 1ª div -->
+        <a id="paracadastro" href="" class="links"></a>
+        <a id="paralogin" href="" class="links"></a>
+
+        <div class="content" > <!-- 2ª div -->
+
+            <!-- FORMULÁRIO DE LOGIN -->
+            <div class="login" id="login"> <!-- 3ª div -->
+                <form action="" method="post" name="formLogin">
+                    <h1>Login</h1>
+
+                    <p>
+                        <label for="email_login">E-mail</label>
+                        <input type="email" name="email_login" id="email_login" required placeholder="ex. contato@projecaotaguatinga.com">
+                    </p>
+                    <p>
+                        <label for="senha_login">Senha</label>
+                        <input type="password" name="senha_login" id="senha_login" required placeholder="ex. senha" maxlength="8">
+                    </p>
+                    <p>
+                        <input type="checkbox" name="manterlogado" id="manterlogado">
+                        <label for="manterlogado">Manter-me logado</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Logar" onclick="validarLogin()">
+                    </p>
+                    <p class="link">
+                        Ainda não tem conta?
+                        <a href="#paracadastro">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+
+            <!-- FORMULÁRIO DE CADASTRO -->
+            <div class="cadastro" id="cadastro"> <!-- 4ª div -->
+                <form action="" method="post" name="formCadastro">
+                    <h1>Cadastro</h1>
+
+                    <p>
+                        <label for="nome_cadastro">Nome</label>
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" required placeholder="nome">
+                    </p>
+                    <p>
+                        <label for="email_cadastro">E-mail</label>
+                        <input type="email" name="email_cadastro" id="email_cadastro" required placeholder="contato@projecaotaguatinga.com">
+                    </p>
+                    <p>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" required placeholder="ex. 1234" maxlength="8">
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar" onclick="validarCadastro()">
+                    </p>
+                    <p class="link">
+                        Já tem conta?
+                        <a href="#paralogin">Ir para Login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
